@@ -24,18 +24,18 @@ public class RedisClient {
 		jedis = redisClient;
 	}
 
-	/* (non-Javadoc)
-	 * @see com.awesome.pro.pool.WrappedResource#close()
+	/**
+	 * closes connection
 	 */
 	public void close() {
 		jedis.close();
 	}
 
-	/* (non-Javadoc)
-	 * @see com.awesome.pro.pool.WrappedResource#isClosed()
+	/**
+	 * checks if connection is closed
 	 */
 	public boolean isClosed() {
-		//FIXME: Handle with a try-catch block.
+		//TODO: Handle with a try-catch block.
 		return false;
 	}
 

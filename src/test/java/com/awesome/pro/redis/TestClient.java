@@ -17,6 +17,11 @@ public class TestClient {
     redisClient.storeData("key2", "value4");
     System.out.println(redisClient.getData("key2"));
 
+    System.out.println("Is it closed : " + redisClient.isClosed());
+
+
+    System.out.println("Is it closed : " + redisClient.isClosed());
+
 
   }
   
